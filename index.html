@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="button">
+    <a href="#" id="open_popUp">Оставить заявку</a>
+  </div>
+
+  
+  <div class="popUp" id="popUp">
+    <div class="popUp__container">
+      <div class="popUp__body" id="popUp__body">
+        <div class="form">
+        <form action="https://formcarry.com/s/Ger4-7rnaWH" method="POST" accept-charset="UTF-8" id="form" class="form__body">
+          <h1 class="form__title">Обратная связь</h1>
+          <div class="form__item">
+            <label for="formName" class="form__label">Имя*</label>
+            <input type="text" id="formName" name="name" class="form__input _reque">
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="form__label">E-mail*</label>
+            <input type="text" id="formEmail" name="email" class="form__input _reque">
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Почему хочешь попасть на курс?</label>
+            <textarea name="message" id="formMessage" class="form__input"></textarea>
+          </div>
+          <div class="form__item">
+            <div class="checkbox">
+              <input type="checkbox" id="formAgree" name="agree" checked class="checkbox__input">
+              <label for="formAgree" class="checkbox__label _reque">Я даю свое согласие на обработку персональных данных</label>
+            </div>
+          </div>
+          <button class="form__buttom" type="submit">Отправить</button>
+        </form>
+        </div>
+        <div class="popUp__close" id="popUp__close">&#10006</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

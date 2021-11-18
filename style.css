@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
+}
+.button {
+    margin-top: 250px;
+    text-align: center;
+}
+
+.button a {
+    font-family: Montserrat;
+    background-color: rgb(0, 225, 255);
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: rgb(2, 30, 63);
+    box-shadow: 0 5px 0 rgb(0, 95, 107) ;
+    transition: background-color 0.5s ease 0s;
+    position: relative;
+    top: 0;
+}
+.button a:hover{
+  background-color: rgb(1, 188, 212);
+}
+.button a:active{
+  top: 3px;
+  box-shadow: 0 2px 0 rgb(0, 95, 107) ;
+}
+.popUp {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+.popUp.active{
+  display: block;
+}
+.popUp__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.popUp__body {
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+}
+.popUp__close{
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+
+}
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  color: black;
+}
+.form * {
+  outline: none;
+}
+.form__title{
+    font-size: 26px;
+    font-weight: 650;
+    margin: 0 0 15px 0;
+}
+.form__body {}
+.form__item {
+  margin: 0 0 15px 0;
+}
+.form__label {
+   display: block;
+   font-size: 18px;
+   margin: 0 0 10px 0;
+}
+.form__input {
+  width:100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.form__input:focus{
+  box-shadow: 0 0 15px black;
+}
+textarea.form__input{
+  min-height: 100px;
+  padding: 15px;
+  resize: vertical;
+}
+.form__buttom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  background-color: rgb(0, 225, 255);
+  color: rgb(2, 30, 63);
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 5px 0 rgb(0, 95, 107) ;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+}
+.form__buttom:hover{
+  background-color: rgb(1, 188, 212);
+}
+.form__buttom:active{
+  top: 3px;
+  box-shadow: 0 2px 0 rgb(0, 95, 107) ;
+}
+.select {
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.select::hover{
+
+}
+.checkbox {}
+.checkbox__input {
+
+}
+.checkbox__label{
+  font-size:18px;
+  line-height: 140%;
+}
