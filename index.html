@@ -12,14 +12,12 @@
 <body>
 
   <div class="button">
-    <a href="#" id="open_popUp">Оставить заявку</a>
+    
+    <button class="open__popUp">Оставить заявку</button>
   </div>
-
-  
   <div class="popUp" id="popUp">
     <div class="popUp__container">
       <div class="popUp__body" id="popUp__body">
-        <div class="form">
         <form action="https://formcarry.com/s/Ger4-7rnaWH" accept-charset="UTF-8" id="form" class="form__body ajaxForm">
           <h1 class="form__title">Обратная связь</h1>
           <div class="form__item">
@@ -28,7 +26,7 @@
           </div>
           <div class="form__item">
             <label for="formEmail" class="form__label">E-mail*</label>
-            <input type="text" id="formEmail" name="email" class="form__input _reque">
+            <input type="email" id="formEmail" name="email" class="form__input _reque">
           </div>
           <div class="form__item">
             <label for="formMessage" class="form__label">Почему хочешь попасть на курс?</label>
@@ -36,14 +34,14 @@
           </div>
           <div class="form__item">
             <div class="checkbox">
-              <input type="checkbox" id="formAgree" name="agree" checked class="checkbox__input">
-              <label for="formAgree" class="checkbox__label _reque">Я даю свое согласие на обработку персональных данных</label>
+              <input type="checkbox" id="formAgree" name="agree" checked class="checkbox__input" required>
+              <label for="formAgree" class="checkbox__label">Я даю свое согласие на обработку персональных данных</label>
             </div>
           </div>
           <button class="form__buttom" type="submit">Отправить</button>
         </form>
-        </div>
-        <div class="popUp__close" id="popUp__close">&#10006</div>
+        
+        <div href="" class="popUp__close" id="popUp__close">&#10006</div>
       </div>
     </div>
   </div>
