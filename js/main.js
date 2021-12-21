@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.history.back();
       popUp.classList.remove('active');
     };
-    history.pushState({ page: 1 }, 'pop', '?pop');
+    history.pushState(null, null, 'pop');
     popUp.classList.add('active');
   });
   closePopUp.addEventListener('click', () => {
