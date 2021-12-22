@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   closePopUp.addEventListener('click', () => {
     popUp.classList.remove('active');
-    history.back();
+    //history.back();
   })
   $(function () {
     $(".ajaxForm").submit(function (e) {
